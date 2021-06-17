@@ -10,8 +10,20 @@ export const SidebarData = [
     cName:'nav-text'
 },
 {
-    title:'CadastroCliente',
+    title:'Cadastro Cliente',
     path:'/CadastroCliente',
+    icon:<IoIcons.IoIosPaper/>,
+    cName:'nav-text'
+},
+{
+    title:'Cadastro Veterinaria',
+    path:'/CadastroVet',
+    icon:<IoIcons.IoIosPaper/>,
+    cName:'nav-text'
+},
+{
+    title:'Cadastro Secretaria',
+    path:'/CadastroSec',
     icon:<IoIcons.IoIosPaper/>,
     cName:'nav-text'
 },

@@ -11,14 +11,12 @@
 
 .Home,
 .CadastroCliente,
+.CadastroVet,
+.CadastroSec,
 .Fila {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-}
-
-.input{
-  align-items: center;
 }
