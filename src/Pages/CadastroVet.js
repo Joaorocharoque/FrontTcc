@@ -29,11 +29,11 @@ function CadastroVet() {
             <div align="center">
                 <input type="text" name="name" placeholder="Nome Completo:" onChange={handleInputChange} value={formValues.vetname || ''} />
                 <br></br>
-                <input type="number" name="CRMV" placeholder="CRMV:" onChange={handleInputChange} value={formValues.vetcrmv || ''} />
+                <input type="number" name="crmv" placeholder="CRMV:" onChange={handleInputChange} value={formValues.cpf || ''} />
                 <br></br>
                 <input type="text" name="email" placeholder="Email:" onChange={handleInputChange} value={formValues.vetemail || ''} />
                 <br></br>
-                <input type="password" name="password" placeholder="Senha:" onChange={handleInputChange} value={formValues.vetpassword || ''} />
+                <input type="password" name="password" placeholder="Senha:" onChange={handleInputChange} value={formValues.password || ''} />
             </div>
             
             <br></br>

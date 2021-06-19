@@ -19,7 +19,7 @@ export default function Login(props) {
       e.preventDefault();
       console.log(username);
       console.log(password);
-      console.log("aqui");
+
       apiGateway.post("/authenticate", {
         username: username,
         password: password

@@ -59,6 +59,12 @@ function Fila() {
             <div align="center">
                 <h2 > {ctime} </h2>
             </div>
+ 
+            <br></br>
+
+            <div align="center" class="wrapper">
+                <button class="button" type="submit">Confirmar</button>
+            </div>
         </form>
     );
 }
