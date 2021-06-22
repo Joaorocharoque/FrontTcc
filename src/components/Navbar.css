@@ -1,4 +1,4 @@
-  
+
   .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
@@ -13,7 +13,7 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    left: 0%;
+    left: 0px;
     transition: 850ms;
   }
   

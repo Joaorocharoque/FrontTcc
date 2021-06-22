@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
-import { DateTimePickerComponent } from "@syncfusion/ej2-react-calendars";
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
+
+
 
 function Fila() {
+    const [selectedDate, setSelecteDate] = useState(null)
+    const [startDate, setStartDate] = useState(new Date());
+
     const [formValues, setFormValues] = useState({});
 
     const handleInputChange = (e) => {
@@ -15,19 +21,8 @@ function Fila() {
         const data = Object.fromEntries(formData);
     };
 
-    let time = new Date().toLocaleTimeString();
-
-    const [ctime, setCtime] = useState(time);
-
-    const UpdateTime = () => {
-        time = new Date().toLocaleTimeString();
-        setCtime(time)
-        setInterval(UpdateTime, 1000)
-    };
-
     return (
-        <form onSubmit={handleSubmit}>
-
+<form>
             <div align="center" class="title">
                 <h1>Fila</h1>
                 <br></br>
@@ -48,24 +43,36 @@ function Fila() {
                 </select>
             </div>
 
-            <div align="center">
-                <DateTimePickerComponent
-                    placeholder="Escolha Data e horário"
-                    format={"dd/MM/yyyy"}
-                    minDate={new Date()}>
-                </DateTimePickerComponent>
-            </div>
-
-            <div align="center">
-                <h2 > {ctime} </h2>
-            </div>
- 
             <br></br>
 
+            <div align="center">
+            <label>Escolha a sua Data:</label>
+            </div>
+
+            <div align="center">
+             
+            <DatePicker
+      selected={startDate}
+      onChange={(date) => setStartDate(date)}
+      format={"dd/MM/yyyy"}
+      locale="pt-BR"
+      showTimeSelect
+      timeFormat="p"
+      timeIntervals={15}
+      dateFormat="Pp"
+    />
+            </div>
+
+
+            <br></br>
             <div align="center" class="wrapper">
                 <button class="button" type="submit">Confirmar</button>
             </div>
-        </form>
+            
+            </form>
+
+        
+      
     );
 }
 
