@@ -41,12 +41,6 @@ function CadastroSec() {
             <div align="center" class="wrapper">
                 <button class="button" type="submit">Enviar</button>
             </div>
-
-            <br></br>
-
-            <footer className="footer">
-                <p align="center" className="footer__copyright"></p>
-            </footer>
         </form>
     );
 }

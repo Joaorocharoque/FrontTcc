@@ -1,11 +1,20 @@
-import React from 'react';
+import { useState } from 'react';
+
 
 function Home() {
-  return (
-    <div className='Home'>
-      <h2>&nbsp;&nbsp;&nbsp;Bem Vindo a QueueVet</h2>
-    </div>
-  );
+
+    return (
+
+        <div>
+
+            <div align="center" class="title">
+                <h1>QueueVet</h1>
+            </div>
+            <div align="center" class="title">
+                <h2>Sua Fila Inteligente</h2>
+            </div>
+        </div>
+    );
 }
 
 export default Home;

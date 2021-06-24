@@ -27,9 +27,11 @@ function CadastroCliente() {
             <br></br>
 
             <div align="center">
-                <input type="text" name="name" placeholder="Nome:" onChange={handleInputChange} value={formValues.name || ''} />
+                <input type="text" name="name" placeholder="Nome Completo:" onChange={handleInputChange} value={formValues.name || ''} />
                 <br></br>
-                <input type="number" name="cpf" placeholder="CPF:" onChange={handleInputChange} value={formValues.cpf || ''} />
+                <input type="number" name="idade" placeholder="Idade do Animal:" onChange={handleInputChange} value={formValues.idade || ''} />
+                <br></br>
+                <input type="text" name="animalname" placeholder="Nome do Animal:" onChange={handleInputChange} value={formValues.animalname || ''} />
                 <br></br>
                 <input type="text" name="email" placeholder="Email:" onChange={handleInputChange} value={formValues.email || ''} />
                 <br></br>
@@ -42,10 +44,6 @@ function CadastroCliente() {
             </div>
 
             <br></br>
-
-            <footer className="footer">
-                <p align="center" className="footer__copyright"></p>
-            </footer>
         </form>
     );
 }
