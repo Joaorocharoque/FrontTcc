@@ -29,6 +29,10 @@ function Fila() {
                 <br></br>
 
                 <div align="center">
+                    <label>Escolha o Veterinario:</label>
+                </div>
+                
+                <div align="center">
                     <select>
                         <option value="name">Eduardo</option>
                         <option value="name">Carlos</option>

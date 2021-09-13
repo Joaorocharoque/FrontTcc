@@ -23,7 +23,7 @@ function Navbar() {
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
               <Link to='#' className='menu-bars'>
-              <img src="favicon.ico" ></img>
+     
               </Link>
             </li>
             {SidebarData.map((item, index) => {

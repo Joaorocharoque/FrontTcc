@@ -33,7 +33,7 @@ function CadastroCliente() {
                 <br></br>
                 <input type="text" name="animalname" placeholder="Nome do Animal:" onChange={handleInputChange} value={formValues.animalname || ''} />
                 <br></br>
-                <input type="text" name="email" placeholder="Email:" onChange={handleInputChange} value={formValues.email || ''} />
+                <input type="email" name="email" placeholder="Email:" onChange={handleInputChange} value={formValues.email || ''} />
                 <br></br>
                 <input type="password" name="password" placeholder="Senha:" onChange={handleInputChange} value={formValues.password || ''} />
             </div>

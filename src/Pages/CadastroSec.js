@@ -29,11 +29,11 @@ function CadastroSec() {
             <div align="center">
                 <input type="text" name="secname" placeholder="Nome Completo:" onChange={handleInputChange} value={formValues.secname || ''} />
                 <br></br>
-                <input type="number" name="cpf" placeholder="CPF:" onChange={handleInputChange} value={formValues.cpf || ''} />
+                <input type="number" name="seccpf" placeholder="CPF:" onChange={handleInputChange} value={formValues.seccpf || ''} />
                 <br></br>
-                <input type="text" name="email" placeholder="Email:" onChange={handleInputChange} value={formValues.secemail || ''} />
+                <input type="email" name="secemail" placeholder="Email:" onChange={handleInputChange} value={formValues.secemail || ''} />
                 <br></br>
-                <input type="password" name="password" placeholder="Senha:" onChange={handleInputChange} value={formValues.password || ''} />
+                <input type="password" name="secpassword" placeholder="Senha:" onChange={handleInputChange} value={formValues.secpassword || ''} />
             </div>
             
             <br></br>
